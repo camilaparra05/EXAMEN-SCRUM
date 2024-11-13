@@ -149,12 +149,14 @@ z-index: 100;
 
 .cards {
     display: flex;
+    flex
     flex-wrap: wrap;
     justify-content: center;
 
 }
 
 .card {
+    flex-direction: row;
     margin-left: vw;
     width: 30%;
     top: -1.5vw;
