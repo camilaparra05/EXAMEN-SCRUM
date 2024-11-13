@@ -1,0 +1,105 @@
+
+/* body {
+    height: 260vh;
+    background-color: lightskyblue;
+    } */
+    
+    .header {
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    }
+    
+    
+    #logotipo {
+    position: relative;
+    left: 2vw;
+    top: 1vw;
+    width: 14vw;
+    height: 14vw; 
+    }
+    
+    .menu {
+    position: relative;
+    display: flex;
+    width: 140vw;
+    top: -25vh;
+    }
+    
+    .nav {
+    position: relative;
+    margin: auto;
+    width: 65vw;
+    padding-left: 10vw;
+    z-index: 100;
+    }
+        
+        ul, ol {
+            list-style: none;
+        }
+        
+        .nav li a {
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+            font-size: clamp(16px, 1.25vw, 3vw);
+        }
+    /*     
+        .nav li a:hover {
+            background-color: #fff;
+            color: #000;
+        }
+        
+        .nav li ul {
+            display: none;
+            position: absolute;
+            min-width: 140px;
+        }
+        
+        .nav li:hover > ul {
+            display: block;
+        } */
+        
+        .Texto1{
+            display: flex;
+            justify-content: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2.4vw;
+            color: green;
+        }
+        .inicio, .Asistentes, .Artistas, .Administrador {
+            float: left;
+            margin-right: 5vw;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        .containerBody {
+            position: relative;
+            display: flex;
+            height: 80vh;
+            top: 14vh;
+            align-items: center;
+        }
+        
+        
+        article {
+            position: relative;
+            width: 78vw;
+            height: 55vh;
+            left: 13vw;
+            background-color: transparent;
+            margin-left: 3vw;  
+        }
+        
+        footer {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            background-color: #4e0000;
+            width: 100vw;
+            bottom: -2vw;
+            height: 18vh;
+        }
+    
+ 
