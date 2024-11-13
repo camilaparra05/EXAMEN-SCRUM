@@ -1,13 +1,12 @@
     
     body {
-        height: 260vh;
+        height: 90vh;
         background-color: lightskyblue;
     }
     
     .header {
         position: fixed;
-        top: 0px;
-        z-index: 100;
+        top: 0;
     }
     
     
@@ -31,7 +30,6 @@
         margin: auto;
         width: 65vw;
         padding-left: 10vw;
-        z-index: 100;
     }
     
     ul, ol {
@@ -61,11 +59,22 @@
     } */
     
     .Texto1{
-        display: flex;
-        justify-content: center;
+        position: relative;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 2.4vw;
         color: green;
+        margin: 30vh;
+    }
+    .Texto1{
+        left: 6vw;
+        top: -15vw;
+    }
+    .img1{
+        position: relative;
+        width: 28vw;
+        height: 28vw;
+        top: -40vh;
+        left: 36vw;
     }
     .inicio, .Asistentes, .Artistas, .Administrador {
         float: left;
@@ -80,72 +89,7 @@
         top: 14vh;
         align-items: center;
     }
-    
-    
-    article {
-        position: relative;
-        width: 78vw;
-        height: 55vh;
-        left: 13vw;
-        background-color: transparent;
-        margin-left: 3vw;  
-    }
-    
-    footer {
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        background-color: #4e0000;
-        width: 100vw;
-        bottom: -2vw;
-        height: 18vh;
-    }
 
-    .calificacion{
-        position: relative;
-        display: flex;
-        align-items: center;
-        flex-direction: row-reverse;
-        padding: 1.563vw 2.083vw;
-        margin-left: 5vw;
-        border: 2px solid black;
-        width: 20vw;
-        bottom: 1vw;
-        border-radius:30px;
-        background: black;
-        box-shadow: 30px 30px 30px -10px rgba(0, 0, 0, .5), inset 15px 15px 3px rgba(255, 255, 255, .1), -4px -4px 15px rgba(255, 255, 255, .1), inset -2px -2px 12px rgba(0, 0, 0, .75);    
-    }
-    
-    .calificacion input {
-        position: relative;
-        width: 2vw;
-        height: 2vw;
-        margin-left: 1vw;
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        cursor: pointer;
-        appearance: none;
-        -webkit-appearance: none;
-    
-    }
-    .calificacion input::before {
-        content: "\f005";
-        position: relative;
-        font-family: fontAwesome;
-        font-size: 2vw;
-        color: white;
-        transition: .5s;
-    }
-    
-    .calificacion input:hover ~ input::before,
-    .calificacion input:hover::before,
-    .calificacion input:checked ~ input::before,
-    .calificacion input:checked::before {
-        color: gold;
-    }
-     
     
     /*----------------------------------------------------- media 768 -------------------------------------------------*/
     
@@ -154,19 +98,13 @@
         html {	
         height: 500vh;
         }
-           
-        .tituloPrincipal {
-        font-size: clamp(30px, 10vw, 12vw);
-        width: 160vw;
-        }
+
         
         #logotipo {
         height: 12vw;
         left: 8vw;
         }
-        
     
-        
         
         article {
             position: relative;
@@ -178,11 +116,6 @@
             margin-left: 3vw;  
         }
         
-        .Bga {
-        right: 8vw;
-        position: relative;
-        width: 40vw;
-        }
     
         .menu {
             display: block;
@@ -245,7 +178,7 @@
         }
         
         /* Remueve estilos de flotado y márgenes */
-        .inicio, .localidad, .experiencia, .estilo {
+        .inicio, .Asistentes, .Artistas, .Administrador {
             float: none;
             margin: 0;
         }
