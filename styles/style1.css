@@ -21,8 +21,8 @@
         position: relative;
         display: flex;
         width: 140vw;
-        top: -25vh;
-    }
+        top: -27vh;
+    } 
     
     .nav {
         position: relative;
@@ -33,7 +33,7 @@
     
     ul, ol {
         list-style: none;
-    }
+    }   
     
     .nav li a {
         text-decoration: none;
@@ -41,53 +41,46 @@
         display: block;
         font-size: clamp(16px, 1.25vw, 3vw);
         color: #000;
-    }
-/*     
-    .nav li a:hover {
-        background-color: #fff;
-        color: #000;
-    }
+    } 
+
     
     .nav li ul {
         display: none;
         position: absolute;
-        min-width: 140px;
+        min-width: 100px;
     }
     
     .nav li:hover > ul {
         display: block;
-    } */
-    
+    } 
     .Texto1{
-        display: flex;
         position: relative;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 2.4vw;
+        font-size: 2vw;
         color: green;
-        margin: 30vh;
-        top: -35vw;
-        left: 6vw;
+        top: -12vw;
+        left: 20vw;
     }
 
     .img1{
         position: relative;
         width: 28vw;
         height: 28vw;
-        top: -80vh;
+        top: -20vh;
         left: 36vw;
     } 
     .img2{
         position: relative;
         width: 24vw;
         height: 24vw;
-        top: -80vh;
+        top: -20vh;
         left: -20vw;
     } 
     .img3{
         position: relative;
         width: 24vw;
         height: 24vw;
-        top: -80vh;
+        top: -20vh;
         left: 16vw;
     } 
     .inicio, .Asistentes, .Artistas, .Administrador {
@@ -95,12 +88,7 @@
         margin-right: 5vw;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
-    
-    .containerBody {
-        position: relative;
-        display: flex;
-        top: 14vh;
-    }
+
 
     
     /*----------------------------------------------------- media 768 -------------------------------------------------*/
@@ -132,13 +120,11 @@
             display: block;
             width: 100%;
             left: 15vw;
-            z-index: 1000;
         }
         
         .nav {
             display: none;
             position: absolute;
-            background-color: #4e0000;
             top: 10vh;
             right: 15vw;
             width: 100vw;
@@ -188,4 +174,4 @@
             float: none;
             margin: 0;
         }
-        } */
+        }  */
