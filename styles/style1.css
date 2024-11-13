@@ -1,11 +1,10 @@
     
     body {
-        height: 90vh;
+        height: 100vh; 
         background-color: lightskyblue;
     }
     
     .header {
-        position: fixed;
         top: 0;
     }
     
@@ -41,6 +40,7 @@
         padding: 10px 15px;
         display: block;
         font-size: clamp(16px, 1.25vw, 3vw);
+        color: #000;
     }
 /*     
     .nav li a:hover {
@@ -59,23 +59,37 @@
     } */
     
     .Texto1{
+        display: flex;
         position: relative;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 2.4vw;
         color: green;
         margin: 30vh;
-    }
-    .Texto1{
+        top: -35vw;
         left: 6vw;
-        top: -15vw;
     }
+
     .img1{
         position: relative;
         width: 28vw;
         height: 28vw;
-        top: -40vh;
+        top: -80vh;
         left: 36vw;
-    }
+    } 
+    .img2{
+        position: relative;
+        width: 24vw;
+        height: 24vw;
+        top: -80vh;
+        left: -20vw;
+    } 
+    .img3{
+        position: relative;
+        width: 24vw;
+        height: 24vw;
+        top: -80vh;
+        left: 16vw;
+    } 
     .inicio, .Asistentes, .Artistas, .Administrador {
         float: left;
         margin-right: 5vw;
@@ -85,15 +99,13 @@
     .containerBody {
         position: relative;
         display: flex;
-        height: 80vh;
         top: 14vh;
-        align-items: center;
     }
 
     
     /*----------------------------------------------------- media 768 -------------------------------------------------*/
     
-    @media (max-width: 768px){
+    /* @media (max-width: 768px){
     
         html {	
         height: 500vh;
@@ -110,7 +122,6 @@
             position: relative;
             width: 95vw;
             height: 55vh;
-            /* top: 5vw; */
             left: 1vw;
             background-color: transparent;
             margin-left: 3vw;  
@@ -135,10 +146,8 @@
             padding: 10px 0;
             z-index: 1000;
         }
-        
-        /* Botón de menú hamburguesa */
         .menu:before {
-            content: '☰'; /* Icono de menú hamburguesa */
+            content: '☰'; 
             font-size: 24px;
             color: #fff;
             padding: 10px 20px;
@@ -146,13 +155,10 @@
             display: inline-block;
             cursor: pointer;
         }
-        
-        /* Mostrar el menú al pasar sobre el botón */
         .menu:hover .nav {
             display: flex;
         }
         
-        /* Ajustes para enlaces de navegación */
         .nav li {
             margin: 0;
             padding: 10px 0;
@@ -177,9 +183,9 @@
             text-align: center;
         }
         
-        /* Remueve estilos de flotado y márgenes */
+
         .inicio, .Asistentes, .Artistas, .Administrador {
             float: none;
             margin: 0;
         }
-        }
+        } */
