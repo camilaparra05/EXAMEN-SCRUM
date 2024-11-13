@@ -60,32 +60,25 @@
         display: block;
     } */
     
+    .Texto1{
+        display: flex;
+        justify-content: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2.4vw;
+        color: green;
+    }
     .inicio, .Asistentes, .Artistas, .Administrador {
         float: left;
         margin-right: 5vw;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     
     .containerBody {
         position: relative;
         display: flex;
-        /* border: 2px solid black; */
         height: 80vh;
         top: 14vh;
         align-items: center;
-    }
-    
-    aside {
-        position: fixed;
-        display: flex;
-        /* top: 22.5vh; */
-        z-index: 10;
-        width: 10vw;
-        height: 55vh;
-        outline: 3px solid white;
-        color: white;
-        justify-content: center;
-        align-items: center;
-        margin-left: 3vw;  
     }
     
     
@@ -93,7 +86,6 @@
         position: relative;
         width: 78vw;
         height: 55vh;
-        /* top: 5vw; */
         left: 13vw;
         background-color: transparent;
         margin-left: 3vw;  
@@ -109,139 +101,7 @@
         bottom: -2vw;
         height: 18vh;
     }
-    
-    .estiloPopular {
-        position: relative;
-        top: 1vw;
-        text-align: center;
-        color: black;
-    }
-    
-    .mainContainer {
-        height: auto;
-    }
-    
-    .estiloPopular {
-        color: white;
-    }
-    
-    .card {
-        position: relative;
-        left: 2vw;
-        bottom: 4vw;
-        margin-left: 2vw;
-        width: 90%;
-    }
-    
-    .nombreTatuador {
-        position: relative;
-        bottom: 3vw;
-        text-align: center;
-        color: white;
-    }
-    
-    .subtitle {
-        margin-right: 5vw;
-        margin-left: 5vw;
-    }
-    
-    #desc {
-        
-    }
-    
-    #img1 {
-        margin-left: 2vw;
-    }
-    #img2 {
-        margin-left: 1vw;
-    }
-    #img3 {
-        margin-left: 1vw;
-    }
-    #img4 {
-        margin-left: 1vw;
-    }
-    #img5 {
-        margin-left: 1vw;
-    }
-    
-    #tatuadorImg {
-        position: relative;
-        display: flex;
-        width: 12vw;
-        margin-left: 1vw;
-    }
-    
-    #tatuador2Img {
-        position: relative;
-        display: flex;
-        width: 12vw;
-        margin-left: 1vw;
-    }
-    
-    #tatuador3Img {
-        position: relative;
-        display: flex;
-        width: 12vw;
-        margin-left: 1vw;
-    }
-    
-    #tatuador4Img {
-        position: relative;
-        display: flex;
-        width: 12vw;
-        margin-left: 1vw;
-    }
-    
-    #tatuador5Img {
-        position: relative;
-        display: flex;
-        width: 12vw;
-        margin-left: 1vw;
-    }
-    
-    #JPT {
-        position: relative;
-        width: 12vw;
-        top: 5vw; 
-    }
-    
-    #cardP {
-        width: 95%;
-    }
-    .estiloMasPopular {
-        display: flex;
-        position: relative;
-        font-size: 6vw;
-        top: 2vw;
-        justify-content: center;
-        font-family: "Graffonti";
-        text-shadow: 0.25vw 0.25vw 0.25vw black;
-    }
-    
-    .cards {
-        display: inline-block;
-        top: 0;
-        width: 27%;
-    }
-    
-    .tatuadoresDestacados {
-        display: flex;
-        position: relative;
-        justify-content: center;
-        bottom: 2vw;
-    }
-    
-    .Resena{
-        display: flex;
-    
-    }
-    .Resena h1{
-        position: relative;
-        left: 4vw;
-        font-size: 2vw;
-    
-    }
+
     .calificacion{
         position: relative;
         display: flex;
@@ -285,81 +145,7 @@
     .calificacion input:checked::before {
         color: gold;
     }
-    
-    .comentarios{
-        padding: 2vw;
-    }
-    .comentarios h1{
-        font-size: clamp(30px, 3vw, 2vw);;
-    }
-    .comentarios p{
-        font-size: clamp(18px, 3vw, 0.8vw);;
-    }
-    .cajaComentarios{
-        margin-left: 2vw;
-    }
-    
-    .buttom{
-        background-color: #3d3d3d;
-        color: white;
-        font-size: 1.1rem;
-        padding: 0.625vw 1.042vw;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-        user-select: none;
-        width: 40vw;
-        margin-bottom: 5vw;
-      }
-      .buttom:hover {
-        background-color: #5c1414;
-      }
-    
-      .buttom:active {
-        background-color: #8d3c39;
-        transform: scale(0.98); /* Efecto de presionar el botón */
-      }
-      #mensaje{
-        border-radius: 0.5vw;
-      }
-      textarea {
-        width: 66vw;
-        padding: 1vw;
-        margin: 0 auto;
-        border-radius: 1vw;
-        border: 1px solid #ddd;
-        font-size: 1rem;
-        color: #dddddd;
-        background-color: #000000;
-        resize: vertical;
-        transition: border-color 0.3s;
-      }
-      textarea:focus {
-        border-color: black; 
-        outline: none;
-        background-color: #a3a3a3;
-        color: #000;
-      }
-    
-      #card1:hover, #card2:hover, #card3:hover {
-        transform: translateY(-1.3vw); /* Eleva la tarjeta ligeramente */
-        box-shadow: 0 20px 30px rgb(165, 165, 165); /* Sombra más fuerte al pasar el cursor */
-      }
-    
-      .contact {
-        display: flex;
-        justify-content: flex-start;
-        position: relative;
-        right: 2vw;
-        font-size: clamp(30px, 3vw, 2vw);
-        width: 98vw;
-        margin-top: 1vw;
-      }
-    
-      .contacto {
-        color: white;
-      }
+     
     
     /*----------------------------------------------------- media 768 -------------------------------------------------*/
     
@@ -379,21 +165,6 @@
         left: 8vw;
         }
         
-        aside {
-        width: 91vw;
-        height: 22vh;
-        top: 59.5vh;
-        z-index: 10;
-        }
-    
-        .card {
-        width: 85%;
-        left: -0vw;
-        }
-    
-        .cards {
-            width: 96%;
-        }
     
         
         
