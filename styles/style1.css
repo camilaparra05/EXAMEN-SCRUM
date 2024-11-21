@@ -1,13 +1,16 @@
-/*     
+ 
     body {
         height: 100vh; 
         background-color: lightskyblue;
-    } */
-    
+    } 
     .header {
         top: 0;
     }
     
+    @font-face {
+        font-family: "Gagalin";
+        src: url(../fuentes/gagalin/Gagalin-Regular.otf);
+      }
     
     #logotipo {
         position: relative;
@@ -55,7 +58,7 @@
     } 
     .Texto1{
         position: relative;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: "Gagalin";
         font-size: 2vw;
         color: green;
         top: -12vw;
@@ -68,6 +71,9 @@
         height: 28vw;
         top: -20vh;
         left: 36vw;
+        border-radius: 5%;
+        border: 2px solid greenyellow;
+        
     } 
     .img2{
         position: relative;
@@ -75,6 +81,8 @@
         height: 24vw;
         top: -20vh;
         left: -20vw;
+        border-radius: 5%;
+        border: 2px solid greenyellow;
     } 
     .img3{
         position: relative;
@@ -82,12 +90,31 @@
         height: 24vw;
         top: -20vh;
         left: 16vw;
+        border-radius: 5%;
+        border: 2px solid greenyellow;
     } 
     .inicio, .Asistentes, .Artistas, .Administrador {
         float: left;
-        margin-right: 5vw;
+        margin-right: 5vw; 
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border: 2px solid greenyellow;
+        border-radius: 15%;
+
     }
+    .imgen{
+        background-color: blanchedalmond;
+        color: blue;
+
+    }
+
+    footer{
+        background-color:yellow;
+        color: blue;
+        height: 8vh;
+        position: fixed;
+    }
+
+
 
 
     
