@@ -4,74 +4,187 @@
         background-color: lightskyblue;
     } */
     
-    .header {
-        top: 0;
-    }
-    
-    
-    #logotipo {
-        position: relative;
-        left: 2vw;
-        top: 1vw;
-        width: 14vw;
-        height: 14vw; 
-    }
-    
-    .menu {
-        position: relative;
-        display: flex;
-        width: 140vw;
-        top: -27vh;
-    } 
-    
-    .nav {
-        position: relative;
-        margin: auto;
-        width: 65vw;
-        padding-left: 10vw;
-    }
-    .nav li a:hover {
-        background-color: #fff;
-        color: #000;
-    }
+.header {
+    top: 0;
+}
+   
 
-    
-    ul, ol {
-        list-style: none;
-    }   
-    
-    .nav li a {
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+.containerHeader {
+    position: relative;
+    display: flex;
+    width: 100vw;
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    justify-content: flex-end;
+    right: 10vw;
+}
+
+
+
+#logotipo {
+    width: 10vw; 
+    height: auto; 
+    margin-right: auto;  
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    position: relative;
+    margin: 0 15px; 
+}
+
+
+.nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.nav li a:hover {
+    background-color: #444;
+    border-radius: 4px;
+}
+
+
+.nav ul.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav li:hover > ul.submenu {
+    display: block;
+}
+
+.Texto1{
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.4vw;
+    color: green;
+}
+
+.containerBody {
+    position: relative;
+    display: flex;
+    height: 80vh;
+    top: 14vh;
+    align-items: center;
+}
+
+
+article {
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+    left: 13vw;
+    background-color: transparent;
+    margin-left: 3vw;  
+}
+
+
+
+.cards {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+width: 60vw;
+}
+
+.card {
+margin-left: 1vw;
+width: 60%;
+top: -1.5vw;
+}
+
+/* Media Query para pantallas más pequeñas (tablets y móviles) */
+@media (max-width: 768px) {
+    /* Menú hamburguesa */
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
         color: white;
-        text-decoration: none;
-        padding: 10px 15px;
-        display: block;
-        font-size: clamp(16px, 1.25vw, 3vw);
-    }
-    
-    .nav ul li {
-        display: none;
-        position: absolute;
-        min-width: 100px;
-    }
-    
-    .nav li ul:hover {
-        display: block;
-        background-color: #fff;
-        color: #000;
-    }
-    
-    .nav li:hover > ul {
-        display: block;
-    } 
-    .inicio, .Registros, .Artistas, .Administrador, .Eventos {
-        float: left;
-        margin-right: 3vw;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-left: 15px;
     }
 
-    .menu:hover .nav {
-        display: flex;
+    /* Ocultar el menú de navegación en pantallas pequeñas */
+    .nav {
+        display: none; /* Inicialmente oculto */
+        width: 100%;
     }
+
+    /* Mostrar el menú cuando se haga clic en el hamburguesa */
+    .nav.open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* Logo más pequeño */
+    #logotipo {
+        width: 20vw;  /* Logo más pequeño en pantallas pequeñas */
+    }
+
+    /* Menú en columna y centrado */
+    .menu {
+        flex-direction: row;
+        justify-content: flex-end; /* Alineación derecha */
+    }
+}
+
+
+
+/* Media Query para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+    /* Logo aún más pequeño */
+    #logotipo {
+        width: 30vw; /* Logo más pequeño en móviles */
+    }
+}
+
+
     
     .Texto1{
         position: relative;
@@ -86,21 +199,21 @@
         position: relative;
         width: 28vw;
         height: 28vw;
-        top: -20vh;
+        top: 20vh;
         left: 36vw;
     } 
     .img2{
         position: relative;
         width: 24vw;
         height: 24vw;
-        top: -20vh;
+        top: 20vh;
         left: -20vw;
     } 
     .img3{
         position: relative;
         width: 24vw;
         height: 24vw;
-        top: -20vh;
+        top: 20vh;
         left: 16vw;
     } 
     
