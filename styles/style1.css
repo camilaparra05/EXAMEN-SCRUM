@@ -1,204 +1,252 @@
- 
-    body {
-        height: 100vh; 
-        background-color: lightskyblue;
-    } 
-    .header {
-        top: 0;
-    }
-    
-    @font-face {
-        font-family: "Gagalin";
-        src: url(../fuentes/gagalin/Gagalin-Regular.otf);
-      }
-    
-    #logotipo {
-        position: relative;
-        left: 2vw;
-        top: 1vw;
-        width: 14vw;
-        height: 14vw; 
-    }
-    
-    .menu {
-        position: relative;
-        display: flex;
-        width: 140vw;
-        top: -27vh;
-    } 
-    
-    .nav {
-        position: relative;
-        margin: auto;
-        width: 65vw;
-        padding-left: 10vw;
-    }
-    
-    ul, ol {
-        list-style: none;
-    }   
-    
-    .nav li a {
-        text-decoration: none;
-        padding: 10px 15px;
-        display: block;
-        font-size: clamp(16px, 1.25vw, 3vw);  
-        color: white;
-    } 
+/* 
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: black;
+    color: #333;
+}
+.header {
+    background-color: green;
+    color: #fff;
+    display: flex;
+    height: 17vh;
+}
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+#logotipo {
+    position: relative;
+    left: 2vw;
+    width: 14vw;
+    height: 14vw; 
+}
+
+.tituloPrincipal {
+    position: relative;
+    display: flex;
+    font-size: 2vw;
+    left: 24%;
+    top: 40%;
+   
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    width: 140vw;
+    left: 40%;
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: green;
+    transition: background-color 0.3s ease;
+}
+
+.nav li:hover {
+    background-color: #2d76bb;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.Texto1 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0;
+    color: greenyellow;
+}
+
+ .fraseInspiradora {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2rem;
+    color:black;
+    margin-bottom: 2rem;
+} 
+.img1{
+    position: relative;
+    width: 25vw;
+    height: 21vw;
+    left: 3vw;
+    bottom: 11vh;
+    border-radius: 5%;
+    border: 6px solid greenyellow;
     
-    .nav li ul {
-        display: none;
-        position: absolute;
-        min-width: 100px;
-    }
-    
-    .nav li:hover > ul {
-        display: block;
-    } 
-    .Texto1{
-        position: relative;
-        font-family: "Gagalin";
-        font-size: 2vw;
-        color: green;
-        top: -12vw;
-        left: 20vw;
-    }
+} 
+.img2{
+    position: relative;
+    width: 24vw;
+    height: 24vw;
+    bottom:  12vh;
+    right:13vw;
+    border-radius: 5%;
+    border: 5px solid greenyellow;
+} 
+.img3{
+    position: relative;
+    width: 24vw;
+    height: 24vw;
+    bottom:10vh;
+    left: 24vw;
+    border-radius: 5%;
+    border: 5px solid greenyellow;
+} 
+.inicio, .Asistentes, .Artistas, .Administrador {
+    float: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 2px solid greenyellow;
+    border-radius: 15%;
 
-    .img1{
-        position: relative;
-        width: 28vw;
-        height: 28vw;
-        top: -20vh;
-        left: 36vw;
-        border-radius: 5%;
-        border: 2px solid greenyellow;
-        
-    } 
-    .img2{
-        position: relative;
-        width: 24vw;
-        height: 24vw;
-        top: -20vh;
-        left: -20vw;
-        border-radius: 5%;
-        border: 2px solid greenyellow;
-    } 
-    .img3{
-        position: relative;
-        width: 24vw;
-        height: 24vw;
-        top: -20vh;
-        left: 16vw;
-        border-radius: 5%;
-        border: 2px solid greenyellow;
-    } 
-    .inicio, .Asistentes, .Artistas, .Administrador {
-        float: left;
-        margin-right: 5vw; 
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        border: 2px solid greenyellow;
-        border-radius: 15%;
+}
 
-    }
-    .imgen{
-        background-color: blanchedalmond;
-        color: blue;
+footer {
+    background-color: green;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
 
-    }
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-    footer{
-        background-color:yellow;
-        color: blue;
-        height: 8vh;
-        position: fixed;
-    }
+footer a:hover {
+    text-decoration: underline;
+} */
 
 
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh 0;
+    background-color: green;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
+.logo img {
+    height: 107px;
+    left: 32vh;
+    position: absolute;
+    top: 2%;
+}
 
-    
-    /*----------------------------------------------------- media 768 -------------------------------------------------*/
-    
-    /* @media (max-width: 768px){
-    
-        html {	
-        height: 500vh;
-        }
+.tituloPrincipal {
+    font-size: 28px;
+    color:black;
+    text-align: center;
+}
+.ticker {
+    background-color: greenyellow;
+    color: black;
+    padding: 1vh 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+.Texto1 {
+    text-align: center;
+    font-size: 24px;
+    margin: 4vh 0;
+    color: greenyellow
+}
+.menu {
+    text-align: center;
+    margin: 3vh ;
+}
 
-        
-        #logotipo {
-        height: 12vw;
-        left: 8vw;
-        }
-    
-        
-        article {
-            position: relative;
-            width: 95vw;
-            height: 55vh;
-            left: 1vw;
-            background-color: transparent;
-            margin-left: 3vw;  
-        }
-        
-    
-        .menu {
-            display: block;
-            width: 100%;
-            left: 15vw;
-        }
-        
-        .nav {
-            display: none;
-            position: absolute;
-            top: 10vh;
-            right: 15vw;
-            width: 100vw;
-            flex-direction: column;
-            padding: 10px 0;
-            z-index: 1000;
-        }
-        .menu:before {
-            content: '☰'; 
-            font-size: 24px;
-            color: #fff;
-            padding: 10px 20px;
-            background-color: #4e0000;
-            display: inline-block;
-            cursor: pointer;
-        }
-        .menu:hover .nav {
-            display: flex;
-        }
-        
-        .nav li {
-            margin: 0;
-            padding: 10px 0;
-            text-align: center;
-        }
-        
-        .nav li a {
-            font-size: 18px;
-            padding: 10px 0;
-            width: 100%;
-            background-color: transparent;
-        }
-        
-        .nav li ul {
-            position: static;
-            min-width: 100%;
-            background-color: #4e0000;
-        }
-        
-        .nav li:hover ul {
-            display: block;
-            text-align: center;
-        }
-        
+.nav {
+    display: inline-flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
 
-        .inicio, .Asistentes, .Artistas, .Administrador {
-            float: none;
-            margin: 0;
-        }
-        }  */
+.nav li {
+    padding: 10px 20px;
+    background-color: green;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav li:hover {
+    background-color:green;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.cta-button {
+    display: block;
+    margin: 2vh auto;
+    padding: 12px 24px;
+    color: white;
+    border: 5px solid greenyellow;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    background-color: green;
+    width: 40vh;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 4vh 0;
+}
+
+.galeria .imagen img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria .imagen img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.inicio.asistentes.artistas.admistrador {
+    border: 1px solid greenyellow;
+}
+footer {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 2vh 0;
+    font-size: 14px;
+}
