@@ -30,29 +30,49 @@
         width: 65vw;
         padding-left: 10vw;
     }
+    .nav li a:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
     
     ul, ol {
         list-style: none;
     }   
     
     .nav li a {
+        color: white;
         text-decoration: none;
         padding: 10px 15px;
         display: block;
-        font-size: clamp(16px, 1.25vw, 3vw);  
-        color: white;
-    } 
-
+        font-size: clamp(16px, 1.25vw, 3vw);
+    }
     
-    .nav li ul {
+    .nav ul li {
         display: none;
         position: absolute;
         min-width: 100px;
     }
     
+    .nav li ul:hover {
+        display: block;
+        background-color: #fff;
+        color: #000;
+    }
+    
     .nav li:hover > ul {
         display: block;
     } 
+    .inicio, .Registros, .Artistas, .Administrador, .Eventos {
+        float: left;
+        margin-right: 3vw;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .menu:hover .nav {
+        display: flex;
+    }
+    
     .Texto1{
         position: relative;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -83,11 +103,7 @@
         top: -20vh;
         left: 16vw;
     } 
-    .inicio, .Asistentes, .Artistas, .Administrador {
-        float: left;
-        margin-right: 5vw;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
+    
 
 
     
