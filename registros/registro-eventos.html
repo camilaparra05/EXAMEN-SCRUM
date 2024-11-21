@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fundación CultuVivo</title>
+    <link rel="stylesheet" href="../styles/bulma.css">
+    <link rel="stylesheet" href="../styles/registros.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <section class="header">
+            <div class="containerHeader">
+                <div class="logo">
+                    <img src="../img/Logo.png" alt="" id="logotipo">
+                </div>
+                <h1 class="title tituloPrincipal">
+
+                </h1>
+                <div class="menu">
+                    <ul class="nav">
+                        <div class="inicio">
+                            <li><a href="../index.html">Inicio</a></li>
+                        </div>
+                        <div class="Registros">
+                            <li><a href="#">Registros</a>
+                                <ul class="submenu">
+                                    <li><a href="/registros/registro-eventos.html">Registro eventos</a></li>
+                                    <li><a href="/registros/registro-asistentes.html">Registro asistentes</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                        <div class="Artistas">
+                            <li><a href="../artistas.html">Artistas</a></li>
+                        </div>
+                        <div class="Administrador">
+                            <li><a href="index.html">Administrador</a></li>
+                        </div>
+                        <div class="Eventos">
+                            <li><a href="../eventos.html">Eventos</a></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </header>
+    <h1 class="title has-text-centered is-1" id="titulo"> REGISTRO DE EVENTOS</h1>
+    <div class="card">
+        <br>
+        <br>
+        <div class="formulario">
+            <form action="" method="GET">
+                <fieldset>
+                    <legend class="title">Datos del evento:</legend> <br>
+                    <label for="nombre">Nombre del evento:</label>
+                    <input type="text" name="nombre" id="nombre" size="10"/> <br><br>
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" name="fecha" id="fecha" value="2006-10-04"/>
+                    <label for="hora">Hora:</label>
+                    <input type="time" name="hora" id="hora" value="20:30:00"/>
+                    <br/><br/>
+                    <label for="lugar">Lugar:</label>
+                    <input type="text"/> <br><br>
+                    <label for="capMax">Capacidad Máxima de asistentes:</label>
+                    <input type="text"/>
+                    <br/><br/>
+                    <label for="capMax">Número de artistas que participarán:</label>
+                    <input type="text" /> <br><br>
+                    <input type="submit" value="Enviar"/>
+                    <input type="reset" value="Limpiar todo"/>
+                    <br/><br/>
+        </div>
+        <footer>
+            <br><br><br>
+        </footer>
+</body>
+
+</html>

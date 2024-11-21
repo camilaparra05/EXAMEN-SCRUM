@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fundación CultuVivo</title>
+    <link rel="stylesheet" href="../styles/bulma.css">
+    <link rel="stylesheet" href="../styles/registros.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <section class="header">
+            <div class="containerHeader">
+                <div class="logo">
+                    <img src="../img/Logo.png" alt="" id="logotipo">
+                </div>
+                <h1 class="title tituloPrincipal">
+                    
+                </h1>
+                <div class="menu">
+                    <ul class="nav">
+                        <div class="inicio">
+                            <li><a href="../index.html">Inicio</a></li>
+                        </div>
+                        <div class="Registros">
+                            <li><a href="#">Registros</a>
+                            <ul class="submenu">
+                                <li><a href="/registros/registro-eventos.html">Registro eventos</a></li>
+                                <li><a href="/registros/registro-asistentes.html">Registro asistentes</a></li>
+                            </ul>
+                        </li>
+                        </div>
+                        <div class="Artistas">
+                            <li><a href="../artistas.html">Artistas</a></li>
+                        </div>
+                        <div class="Administrador">
+                            <li><a href="index.html">Administrador</a></li>
+                        </div>
+                        <div class="Eventos">
+                            <li><a href="../eventos.html">Eventos</a></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </header>
+    <h1 class="title has-text-centered is-1" id="titulo"> REGISTRO ASISTENTE</h1>
+        <div class="card">
+            <br>
+            <br>
+            <div class="formulario" class="is-centered">
+                <form action="" method="GET" class="is-centered">
+                    <label for="id" class="has-text-white">Identificación</label><br>
+                    <input type="tel" name="identification" id="id" minlength="3" maxlength="50" autofocus required>    
+                    <br><br>
+                    <label for="nombre" class="has-text-white">Nombres y Apellidos</label><br>
+                    <input type="text" name="name" id="nombre" minlength="3" maxlength="50" required>
+                    <br><br>
+                    <label for="e-mail" class="has-text-white">Correo electrónico</label><br>
+                    <input type="email" name="email" id="e-mail" required>
+                    <br><br>
+                    <label for="ticket" class="has-text-white">Tipo de boleto</label>
+                    <br>
+                    <input type="radio" name="tiquetegen" id="ticket" class="has-text-white"> General
+                    <br>
+                    <input type="radio" name="tiquetevip" id="ticket" class="has-text-white"> VIP
+                    <br><br>
+                    <label for="status" class="has-text-white">Estado dentro del evento</label>
+                    <br>
+                    <input type="radio" name="waiting" id="status" class="has-text-white"> En Espera
+                    <br>
+                    <input type="radio" name="confirmed" id="status" class="has-text-white"> Asistencia confirmada
+                    <br>
+                    <input type="radio" name="cancelled" id="status" class="has-text-white"> Reserva cancelada
+                    <br><br>
+                    <input type="submit" value="Enviar"/>
+                    <input type="reset" value="Limpiar todo"/>
+                </form>
+            </div>
+        </div>
+    <footer>
+        
+    </footer> 
+</body>
+
+</html>
